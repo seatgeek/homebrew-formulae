@@ -1,4 +1,4 @@
-# formulae
+# homebrew-formulae
 
 Custom SeatGeek Formula for Homebrew
 
@@ -24,8 +24,9 @@ The following formulae will be available when you tap this repository.
 
 ### Nginx-Sg
 
-
 > Allows for customized nginx installations
+
+**Install with** `brew install nginx-sg`
 
 Lines 27-33, 66-73, and 82-98 are the patches to the real existing nginx formula in homebrew.
 
@@ -37,10 +38,10 @@ Usage:
 
 Example:
 
-		brew install nginx-sg.rb \
-	    --add-github-module=agentzh/chunkin-nginx-module \
-	    --include-module-http_gzip_static_module \
-	    --add-mdounin-module=ngx_http_auth_request_module#a29d74804ff1
+		brew install nginx-sg \
+			--add-github-module=agentzh/chunkin-nginx-module \
+			--include-module-http_gzip_static_module \
+			--add-mdounin-module=ngx_http_auth_request_module#a29d74804ff1
 
 Running the above on the commandline produces the following output:
 
