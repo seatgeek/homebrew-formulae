@@ -3,11 +3,11 @@ require 'formula'
 class NginxSg < Formula
   homepage 'http://nginx.org/'
   url 'http://nginx.org/download/nginx-1.2.4.tar.gz'
-  sha1 'e3de0b2b82095f26e96bdb461ba36472d3e7cdda'
+  sha256 'c587c25f2fa9c9dde6a58cbaf7bf2c808ee360cfa3cdaf00a13a33f728d96c43'
 
   devel do
     url 'http://nginx.org/download/nginx-1.3.8.tar.gz'
-    sha1 '84ff39e3f76e9f496f4e05080885e04caf472bb9'
+    sha256 '8d68f9224f4616c987208bcb3a0bf1ae03740c5ec313b220f995ba50d826fe1c'
   end
 
   env :userpaths

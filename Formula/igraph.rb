@@ -3,7 +3,7 @@ require 'formula'
 class Igraph < Formula
   homepage 'http://igraph.sourceforge.net'
   url 'http://downloads.sourceforge.net/sourceforge/igraph/igraph-0.6.tar.gz'
-  sha1 'd9a6e7c0462b5948ebfbf9f1d2685141f5867fe3'
+  sha256 '32cdc487f26fae5f746e72a67c170476ac5a93b1384735e7f697c664e7845477'
 
   option :universal
 
