@@ -1,8 +1,8 @@
 class Elasticsearch < Formula
   desc "Distributed search & analytics engine"
   homepage "https://www.elastic.co/products/elasticsearch"
-  url "https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.4.4.tar.gz"
-  sha256 "a3158d474e68520664debaea304be22327fc7ee1f410e0bfd940747b413e8586"
+  url "https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.6.tar.gz"
+  sha256 "78affc30353730ec245dad1f17de242a4ad12cf808eaa87dd878e1ca10ed77df"
 
   bottle :unneeded
 
@@ -64,7 +64,7 @@ class Elasticsearch < Formula
     ln_s etc/"elasticsearch", prefix/"config"
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
     Data:    #{var}/elasticsearch/#{cluster_name}/
     Logs:    #{var}/log/elasticsearch/#{cluster_name}.log
     Plugins: #{var}/lib/elasticsearch/plugins/
@@ -74,7 +74,7 @@ class Elasticsearch < Formula
 
   plist_options :manual => "elasticsearch --config=#{HOMEBREW_PREFIX}/opt/elasticsearch17/config/elasticsearch.yml"
 
-  def plist; <<-EOS.undent
+  def plist; <<~EOS
       <?xml version="1.0" encoding="UTF-8"?>
       <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
       <plist version="1.0">
